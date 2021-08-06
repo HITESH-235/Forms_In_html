@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Target is used as to give the webpage different output frames, like, giving in a new tab">
+    <meta name="keywords" content="html, target, target attributes">
+    <link rel="shortcut icon" href="omnitrixxxx.ico" type="image/x-icon">
+    <title>Target</title>
+</head>
+<body>
+<p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+<form action="/not_known.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+<!-- Note:this action element needs a php file connection which i don't have -->
+<!--_blank	The response is displayed in a new window or tab
+_self	The response is displayed in the current window
+_parent	The response is displayed in the parent frame
+_top	The response is displayed in the full body of the window
+framename	The response is displayed in a named iframe-->

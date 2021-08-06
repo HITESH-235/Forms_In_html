@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Target is used as to give the webpage different output frames, like, giving in a new tab">
+    <meta name="keywords" content="html, target, target attributes">
+    <link rel="shortcut icon" href="omnitrixxxx.ico" type="image/x-icon">
+    <title>Method</title>
+</head>
+<body>
+    <p>This form will be submitted using the GET method:</p>
+
+    <form action="/not_known.php" target="_blank" method="get">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+    <p>This form will be submitted using the POST method:</p>
+
+    <form action="/action_page.php" target="_blank" method="post">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+    
+</body>
+</html>

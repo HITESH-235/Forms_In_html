@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms2</title>
+</head>
+
+<body>
+    <style>
+        form,
+        input,
+        textarea,
+        button,
+        select {
+            border: 2px solid black;
+        }
+
+        h1 {
+            color: darkcyan;
+        }
+
+        form {
+            width: fit-content;
+            height: fit-content;
+            vertical-align: middle;
+            text-align: middle;
+        }
+    </style>
+    <h1>This Is Upgraded Form</h1>
+    <div>
+        <form actions="form.php">Enter Your Name:<br>
+            <label for="aa">
+                <input type="text" name="fname" placeholder="FIRST NAME" size="30" id="aa">
+            </label><label for="bb">
+                <input type="text" name="lname" placeholder="LAST NAME" size="30" id="bb">
+            </label>
+            <hr><br>
+            <label for="cc">DOB:
+                <input type="date" name="bday" id="cc">
+            </label>
+            <hr><br>
+            <label for="dd">ADDRESS:<br>
+                <textarea name="address" placeholder="write here" rows="3" cols="50" maxlength="80"
+                    id="dd"></textarea></label>
+            <hr><br>
+            <label for="ee">Enter Email:
+                <input type="email" name="Email ID" placeholder="google0000@gmail.com" size="30" id="ee">
+                <hr><br>
+                <label for="ff">
+                    <input type="password" name="pswd" placeholder="PassWord" size="30" id="ff">
+                </label>
+                <hr><br>
+                <label for="gg">GENDER-<br>
+                    <select name="gender" id="gg" rows="50">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others</option>
+                        <option value="alien">Alien</option>
+                    </select></label>
+                <hr><br>
+                <label for="hh">Would You Like To Be Notified??<br>
+                    <input type="radio" name="Notify" value="yes" id="hh">Yes
+                </label><br><label for="ii">
+                    <input type="radio" name="Notify" value="no" id="ii">No
+                </label>
+                <hr><br><label for="jj">
+                    <input type="checkbox" name="t&c" id="jj">I Agree To These Terms And Conditions.
+                </label><br><label for="kk">
+                    <input type="checkbox" name="t&c2" id="kk">I Don't Agree To These Terms And Conditions.
+                </label>
+                <hr><br>
+                <!-- <a href="https://photos.app.goo.gl/JK2m99hJNSkfTqHc9"><button type="button" value="Submit">Register</button></a> -->
+                <input type="submit" value="Submit">Register</input>
+                <h2>Some More Attributes</h2>
+                <input type="color">This is colour choosing<br>
+                <input type="datetime-local"><br>
+                <input type="file"><br>
+                <label for="vv">
+                    This is hidden content.
+                    <input type="hidden" placeholder="jfh" id="vv">
+                </label><br>
+                <input type="image" src="omnitrix.png" name="image"><br>
+                <input type="month" name="month"><br>
+                <input type="number" name="no." placeholder="100"><br>
+                -100<input type="range" name="rge" min="-100" max="100">100<br>
+                <input type="search">
+
+        </form>
+    </div>
+</body>
+
+</html>

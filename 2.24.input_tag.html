@@ -1,0 +1,124 @@
+<!--Please refer to #.3.input_tag_notes.text-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="omnitrixxxx.ico">
+    <title>Input Tag</title>
+</head>
+<body>
+<form action="/not_known.php" method="POST">Submit
+<input type="submit"><br>
+<!--defines a button for submitting form data to a form-handler.The form-handler is typically a server page with a script for processing input data.The form-handler is specified in the form's action attribute-->
+Reset<input type="reset"><br>
+<!--defines a reset button that will reset all form values to their default values: -->
+Button<input type="button" onclick="alert('Hello World!')" value="Click Me!"><br>
+Color<br><label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor"><br>
+<!-- The ""<input type="color">"" is used for input fields that should contain a color.Depending on browser support, a color picker can show up in the input field.-->
+Min and Max in Dates<br><label for="datemax">Enter a date before 1980-01-01:</label>
+<input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+<label for="datemin">Enter a date after 2000-01-01:</label>
+<input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+<!-- You can also use the min and max attributes to add restrictions to dates -->
+<!-- The ""<input type="datetime-local">"" specifies a date and time input field, with no time zone. Depending on browser support, a date picker can show up in the input field.-->
+<label for="fname">First name:
+<input type="text" id="fname" name="fname"></label><br>(Hidden element is here)
+<input type="hidden" id="custId" name="custId" value="3487"><br>
+<!--The ""<input type="hidden">"" defines a hidden input field (not visible to a user). A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted. A hidden field often stores what database record that needs to be updated when the form is submitted. Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security! -->
+
+<!--The ""<input type="month">"" allows the user to select a month and year. Depending on browser support, a date picker can show up in the input field. -->
+
+<label for="gsearch">Search Google:
+<input type="search" id="gsearch" name="gsearch"></label><br>
+
+<!-- The ""<input type="tel">"" is used for input fields that should contain a telephone number. -->
+<label for="phone">Enter your phone number:
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></label><br>
+
+<!-- The ""<input type="time">"" allows the user to select a time (no time zone). 
+Depending on browser support, a time picker can show up in the input field.-->
+<label for="appt">Select a time:
+<input type="time" id="appt" name="appt"></label><br>
+
+<!--The ""<input type="url">"" is used for input fields that should contain a URL address.
+Depending on browser support, the url field can be automatically validated when submitted. 
+Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.-->URL <br>
+<label for="homepage">Add your homepage:
+<input type="url" id="homepage" name="homepage"></label><br>
+
+<!--Input Type Week
+The ""<input type="week">"" allows the user to select a week and year. 
+Depending on browser support, a date picker can show up in the input field.-->
+<label for="week">Select a week:
+<input type="week" id="week" name="week"></label><br>
+Readonly <br>
+<!--The input readonly attribute specifies that an input field is read-only.
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+The value of a read-only input field will be sent when submitting the form! -->
+<label for="fname">First name:
+<input type="text" id="fname" name="fname" value="John" readonly></label><br>
+<label for="lname">Last name:
+<input type="text" id="lname" name="lname" value="Doe"></label><br>
+Disabled <br>
+<!--The input disabled attribute specifies that an input field should be disabled.
+A disabled input field is unusable and un-clickable.
+The value of a disabled input field will not be sent when submitting the form!-->
+<label for="fname">First name:
+<input type="text" id="fname" name="fname" value="John" disabled></label><br>
+<label for="lname">Last name:
+<input type="text" id="lname" name="lname" value="Doe"></label><br>
+Size <br>
+<!--The input size attribute specifies the visible width, in characters, of an input field.
+The default value for size is 20.
+Note: The size attribute works with the following input types: text, search, tel, url, email, and password.-->
+<label for="fname">First name:
+<input type="text" id="fname" name="fname" size="50"></label><br>
+<label for="pin">PIN:
+<input type="text" id="pin" name="pin" size="4"></label><br>
+
+<!--The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.-->Maxlength<br>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" size="50"><br>
+<label for="pin">PIN:</label><br>
+<input type="text" id="pin" name="pin" maxlength="4" size="4">
+Multiple <br>
+<label for="files">Select files:
+<input type="file" id="files" name="files" multiple></label><br>
+Pattern <br>
+<label for="country_code">Country code:
+<input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"></label><br>
+Required <br>
+<label for="username">Username:
+<input type="text" id="username" name="username" required></label><br>
+Step <br>
+<label for="points">Points:
+<input type="number" id="points" name="points" step="3"></label><br>
+Autofocus <br>
+<label for="fname">First name:
+<input type="text" id="fname" name="fname" autofocus></label><br>
+<label for="lname">Last name:
+<input type="text" id="lname" name="lname"></label><br>
+Height And Width <br>
+<label for="fname">First name:
+<input type="text" id="fname" name="fname"></label><br>
+<label for="lname">Last name:
+<input type="text" id="lname" name="lname"></label><br>
+<input type="image" src="omnitrix.png" alt="Submit" width="48" height="48"><br>
+Datalist <br>
+<input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+</body>
+</html>
